@@ -6,8 +6,8 @@
 
     // Colores Principales Day
     <color name="primary">#c66363</color>
-    <color name="primary_dark">#874356</color>
-    <color name="primary_light">#EA9C9C</color>
+    <color name="primary_dark">#923539</color>
+    <color name="primary_light">#fc9390</color>
 
     // Colores Secundarios Day
     <color name="secondary">#f5cfa1</color>

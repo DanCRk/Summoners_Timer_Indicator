@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Summoners Timer Indicator</string>
+    <string name="create">Create</string>
+    <string name="join">Join</string>
 </resources>
