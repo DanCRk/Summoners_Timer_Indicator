@@ -1,5 +1,6 @@
 package com.dann.summonerstimerindicator
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,8 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.WindowCompat
 import com.dann.summonerstimerindicator.databinding.ActivitySplashBinding
 
+@Suppress("DEPRECATION")
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivitySplashBinding
@@ -30,6 +33,6 @@ class SplashActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()
-        }, 2000)
+        }, 1500)
     }
 }

@@ -4,8 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/DanCr/OneDrive/Documents/proyectos android/SummonersTimerIndicator/app/src/main/res/drawable/bg_button.xml" value="0.346" />
+        <entry key="..\:/Users/DanCr/OneDrive/Documents/proyectos android/SummonersTimerIndicator/app/src/main/res/drawable/circulo.xml" value="0.346" />
+        <entry key="..\:/Users/DanCr/OneDrive/Documents/proyectos android/SummonersTimerIndicator/app/src/main/res/drawable/custom_et.xml" value="0.346" />
+        <entry key="..\:/Users/DanCr/OneDrive/Documents/proyectos android/SummonersTimerIndicator/app/src/main/res/drawable/rounded_bg_dialog.xml" value="0.346" />
         <entry key="..\:/Users/DanCr/OneDrive/Documents/proyectos android/SummonersTimerIndicator/app/src/main/res/layout/activity_main.xml" value="0.29743589743589743" />
         <entry key="..\:/Users/DanCr/OneDrive/Documents/proyectos android/SummonersTimerIndicator/app/src/main/res/layout/activity_splash.xml" value="0.29743589743589743" />
+        <entry key="..\:/Users/DanCr/OneDrive/Documents/proyectos android/SummonersTimerIndicator/app/src/main/res/layout/fragment_dialog_add.xml" value="0.29743589743589743" />
+        <entry key="..\:/Users/DanCr/OneDrive/Documents/proyectos android/SummonersTimerIndicator/app/src/main/res/layout/fragment_dialog_join.xml" value="0.29743589743589743" />
       </map>
     </option>
   </component>

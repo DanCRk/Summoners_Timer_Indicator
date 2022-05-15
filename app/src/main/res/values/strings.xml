@@ -2,4 +2,8 @@
     <string name="app_name">Summoners Timer Indicator</string>
     <string name="create">Create</string>
     <string name="join">Join</string>
+    <string name="enter_the_code">Enter the code</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="code">Code</string>
 </resources>
