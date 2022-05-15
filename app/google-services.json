@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "902746499770",
+    "project_id": "summoners-timer-indicator",
+    "storage_bucket": "summoners-timer-indicator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902746499770:android:3b86d75d0c0d4f6f7bf083",
+        "android_client_info": {
+          "package_name": "com.dann.summonerstimerindicator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902746499770-2d28869beuaghcualdd6d82bdh4qlii0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyic9qhQVclIWS-uJwhd-q9AF-qm7u4TI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902746499770-2d28869beuaghcualdd6d82bdh4qlii0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

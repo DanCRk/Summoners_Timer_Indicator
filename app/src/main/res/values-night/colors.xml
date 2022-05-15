@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>\
+    <color name="white_transparent">#00FFFFFF</color>
+
+    // Colores Principales Day
+    <color name="primary">#545454</color>
+    <color name="primary_dark">#070707</color>
+    <color name="primary_light">#2B2B2B</color>
+
+    // Colores Secundarios Day
+    <color name="secondary">#600027</color>
+    <color name="secondary_dark">#350000</color>
+    <color name="secondary_light">#92364f</color>
+
+
+    <color name="textColor">#FFFFFF</color>
+
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="SplashColor">#2B2B2B</color>
+</resources>
