@@ -2,6 +2,8 @@ package com.dann.summonerstimerindicator
 
 import android.content.Context
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -40,7 +42,9 @@ class JoinDialogFragment(
                     hideKeyboard()
                     binding.codeLayout.visibility = View.GONE
                     binding.lltLoading.visibility = View.VISIBLE
-                    okCode(code)
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        okCode(code)
+                    }, 1000)
                 } else {
                     Toast.makeText(context, "The code must have 6 characters!", Toast.LENGTH_SHORT)
                         .show()
@@ -72,7 +76,7 @@ class JoinDialogFragment(
     private fun okCode(code: String) {
         val database = Firebase.database
         val myRef = database.getReference(code)
-        myRef.addValueEventListener(object : ValueEventListener {
+        myRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val value = snapshot.value
                 if (value != null) {
@@ -80,7 +84,7 @@ class JoinDialogFragment(
                     onSubmitClickListener(key)
                     dismiss()
                 } else {
-                    Toast.makeText(context, "Code not found!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Game not found!", Toast.LENGTH_SHORT).show()
                     binding.codeLayout.visibility = View.VISIBLE
                     binding.lltLoading.visibility = View.GONE
                     showKeyboard()

@@ -6,4 +6,6 @@
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
     <string name="code">Code</string>
+    <string name="creating_game">Creating game</string>
+    <string name="joining_the_game">Joining the game</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.dann.summonerstimerindicator
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -16,7 +17,17 @@ class MainActivity : AppCompatActivity() {
 
         binding.join.setOnClickListener{
             JoinDialogFragment(onSubmitClickListener = { code ->
-                Toast.makeText(this, "$code", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this,GameActivity::class.java)
+                intent.putExtra("code", code)
+                startActivity(intent)
+            }).show(supportFragmentManager, "addDialogFragment")
+        }
+
+        binding.create.setOnClickListener{
+            CreateDialogFragment(onSubmitClickListener = { code ->
+                val intent = Intent(this,GameActivity::class.java)
+                intent.putExtra("code", code)
+                startActivity(intent)
             }).show(supportFragmentManager, "addDialogFragment")
         }
     }
