@@ -11,7 +11,7 @@
 
     // Colores Secundarios Day
     <color name="secondary">#f5cfa1</color>
-    <color name="secondary_dark">#c3b5a7</color>
+    <color name="secondary_dark">#787068</color>
     <color name="secondary_light">#FBEDDC</color>
 
     <color name="text_color">#2b2b2b</color>

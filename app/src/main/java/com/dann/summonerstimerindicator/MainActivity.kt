@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
             JoinDialogFragment(onSubmitClickListener = { code ->
                 val intent = Intent(this,GameActivity::class.java)
                 intent.putExtra("code", code)
+                intent.putExtra("host", false)
                 startActivity(intent)
             }).show(supportFragmentManager, "addDialogFragment")
         }
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
             CreateDialogFragment(onSubmitClickListener = { code ->
                 val intent = Intent(this,GameActivity::class.java)
                 intent.putExtra("code", code)
+                intent.putExtra("host", true)
                 startActivity(intent)
             }).show(supportFragmentManager, "addDialogFragment")
         }

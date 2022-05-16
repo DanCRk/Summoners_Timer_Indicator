@@ -31,7 +31,7 @@ class CreateDialogFragment(
         _binding = FragmentDialogCreateBinding.inflate(layoutInflater)
         dialog!!.window?.setBackgroundDrawableResource(R.color.transparent)
 
-        // isCancelable = false
+        isCancelable = false
 
         Handler(Looper.getMainLooper()).postDelayed({
             createGame()
@@ -43,15 +43,25 @@ class CreateDialogFragment(
 
     private fun createGame() {
         val database = Firebase.database
-        val randomCode = randomNumber(100000..999999).toString()
+        val randomCode = "123456"//randomNumber(100000..999999).toString()
         val myRef = database.getReference(randomCode)
         myRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val value = snapshot.value
                 if (value != null) {
-                    Toast.makeText(context, "Error, try again later :(", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Error, try again later", Toast.LENGTH_SHORT).show()
                     dismiss()
                 } else {
+                    myRef.child("top").child("sum1").setValue(true)
+                    myRef.child("top").child("sum2").setValue(true)
+                    myRef.child("jg").child("sum1").setValue(true)
+                    myRef.child("jg").child("sum2").setValue(true)
+                    myRef.child("mid").child("sum1").setValue(true)
+                    myRef.child("mid").child("sum2").setValue(true)
+                    myRef.child("adc").child("sum1").setValue(true)
+                    myRef.child("adc").child("sum2").setValue(true)
+                    myRef.child("sup").child("sum1").setValue(true)
+                    myRef.child("sup").child("sum2").setValue(true)
                     onSubmitClickListener(randomCode)
                     dismiss()
                 }

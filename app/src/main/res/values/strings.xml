@@ -8,4 +8,13 @@
     <string name="code">Code</string>
     <string name="creating_game">Creating game</string>
     <string name="joining_the_game">Joining the game</string>
+    <string name="top">top</string>
+    <string name="jg">jg</string>
+    <string name="mid">mid</string>
+    <string name="adc">adc</string>
+    <string name="sup">sup</string>
+    <string name="back">back</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="the_game_will_be_deleted">If you are the host the game will be deleted</string>
+    <string name="deleting_the_game">Leaving the game</string>
 </resources>
